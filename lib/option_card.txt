@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'catechism_screen.dart';
-import 'creed_screen.dart';
-import 'confession_screen.dart';
+import 'creed_screen.txt';
+import 'confession_screen.txt';
 
 class OptionCard extends StatelessWidget {
   final String title;

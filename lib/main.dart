@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Reformed App',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xFF121212),
+        scaffoldBackgroundColor: const Color(0xFF0A0A0A),
         appBarTheme: const AppBarTheme(
-          backgroundColor: Color(0xFF121212),
-          foregroundColor: Colors.white,
+          backgroundColor: Color(0xFF0A0A0A),
+          foregroundColor: Color(0xFFD8D8D8),
         ),
         textTheme: const TextTheme(bodyMedium: TextStyle(color: Colors.white)),
       ),

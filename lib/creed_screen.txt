@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'content.dart';
+import 'content.txt';
 
 class CreedScreen extends StatelessWidget {
   final String itemName;
