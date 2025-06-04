@@ -6,7 +6,7 @@ class DrawerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: const Color(0xFF121212),
+      backgroundColor: const Color(0xFF0A0A0A),
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
@@ -23,6 +23,8 @@ class DrawerPage extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.home),
             title: const Text('HOME'),
+            textColor: Colors.white,
+            iconColor: Colors.white,
             onTap: () {
               Navigator.pop(context);
               // Navigate to home (currently same as CategoriesScreen)
@@ -31,6 +33,8 @@ class DrawerPage extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.history),
             title: const Text('RECENT'),
+            textColor: Colors.white,
+            iconColor: Colors.white,
             onTap: () {
               Navigator.pop(context);
               // Navigate to recent page
@@ -39,6 +43,8 @@ class DrawerPage extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.more_horiz),
             title: const Text('MORE'),
+            textColor: Colors.white,
+            iconColor: Colors.white,
             onTap: () {
               Navigator.pop(context);
               // Navigate to more page

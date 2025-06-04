@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'content.dart';
+import 'content.txt';
 
 class ConfessionScreen extends StatelessWidget {
   final String itemName;
