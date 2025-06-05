@@ -15,14 +15,25 @@ class CatechismCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: const Color(0xFF1E1E1E),
+      color: const Color(0xFF0A0A0A),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.zero,
+        side: BorderSide(
+          color: Color(0xFF303030), // Red border color
+          width: 0.5, // Border width
+        ),
+      ),
       child: ListTile(
-        title: Text(
-          title,
-          style: const TextStyle(
-            fontSize: 18,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
+        title: Padding(
+          padding: EdgeInsets.only(bottom: 20),
+          child: Text(
+            title,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontFamily: "LibreFranklin",
+            ),
           ),
         ),
         subtitle: Column(
@@ -30,7 +41,7 @@ class CatechismCard extends StatelessWidget {
           children: [
             Text(
               '${(progress * 100).toInt()}%',
-              style: const TextStyle(fontSize: 16, color: Colors.white),
+              style: const TextStyle(fontSize: 12, color: Colors.white),
             ),
             LinearProgressIndicator(
               value: progress,

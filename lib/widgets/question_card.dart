@@ -24,7 +24,11 @@ class QuestionCard extends StatelessWidget {
           style: const TextStyle(fontSize: 16, color: Colors.white),
         ),
         trailing: IconButton(
-          icon: const Icon(Icons.arrow_forward_ios, color: Colors.white),
+          icon: const Icon(
+            Icons.arrow_forward_ios,
+            color: Color.fromARGB(255, 129, 129, 129),
+            size: 15,
+          ),
           onPressed: onTap,
         ),
         onTap: onTap,

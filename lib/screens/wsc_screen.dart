@@ -23,9 +23,9 @@ class WSCScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Image.network(
-            'https://picsum.photos/400/200?random=6',
-            height: 200,
+          Image.asset(
+            'assets/images/Assertion_of_Liberty_of_Conscience_by_the_Independents_of_the_Westminster_Assembly_of_Divines,_1644.jpg',
+            height: 500,
             width: double.infinity,
             fit: BoxFit.cover,
             errorBuilder:

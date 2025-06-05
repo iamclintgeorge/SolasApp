@@ -57,7 +57,7 @@ class CategoriesScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left: 20.0, top: 30.0),
+                    padding: EdgeInsets.only(left: 20.0, top: 30.0),
                     child: Text(
                       'Categories',
                       style: TextStyle(
