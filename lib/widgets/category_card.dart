@@ -45,13 +45,15 @@ class CategoryCard extends StatelessWidget {
               ),
             ),
 
-            Padding(
+            Container(
               padding: const EdgeInsets.only(left: 10.0, top: 20.0),
+              // margin: EdgeInsets.only(bottom: 50),
               child: Text(
                 title,
                 style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.normal,
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "LibreFranklin",
                 ),
               ),
             ),
@@ -62,6 +64,7 @@ class CategoryCard extends StatelessWidget {
                 style: const TextStyle(
                   fontSize: 11,
                   fontWeight: FontWeight.w600,
+                  fontFamily: "LibreFranklin",
                 ),
               ),
             ),

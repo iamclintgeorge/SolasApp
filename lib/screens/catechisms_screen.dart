@@ -9,7 +9,17 @@ class CatechismsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Catechisms'),
+        title: const Text(
+          'Catechisms',
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+            fontFamily: 'PD',
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+        centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () {
@@ -18,6 +28,7 @@ class CatechismsScreen extends StatelessWidget {
         ),
       ),
       body: ListView(
+        padding: EdgeInsets.only(top: 30),
         children: [
           CatechismCard(
             title: 'Westminster Shorter Catechism',
