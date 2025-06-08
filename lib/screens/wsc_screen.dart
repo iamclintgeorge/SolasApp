@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/question_card.dart';
 import 'question_answer_screen.dart';
-import '../content/wsc_content.dart';
+import '../content/catechism/wsc_content.dart';
 
 class WSCScreen extends StatelessWidget {
   const WSCScreen({super.key});

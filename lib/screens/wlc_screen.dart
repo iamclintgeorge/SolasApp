@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../content/wlc_content.dart'; // Assuming the wlcContent data is in this file
+import '../content/catechism/wlc_content.dart'; // Assuming the wlcContent data is in this file
 import '../widgets/question_card.dart'; // Import your QuestionCard widget
 import 'question_answer_screen.dart'; // Import the QuestionAnswerScreen
 
