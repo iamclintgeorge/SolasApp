@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import '../widgets/question_card.dart';
-import 'question_answer_screen.dart';
-import '../content/wsc_content.dart';
+import '../content/wlc_content.dart'; // Assuming the wlcContent data is in this file
+import '../widgets/question_card.dart'; // Import your QuestionCard widget
+import 'question_answer_screen.dart'; // Import the QuestionAnswerScreen
 
-class WSCScreen extends StatelessWidget {
-  const WSCScreen({super.key});
+class WLCScreen extends StatelessWidget {
+  const WLCScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final metadata = wscContent['Metadata'];
-    final List<dynamic> questions = wscContent['Data'];
+    // Extract metadata and data from wlcContent
+    final metadata = wlcContent['Metadata'] as Map<String, dynamic>;
+    final data = wlcContent['Data'] as List<dynamic>;
 
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'WSC',
+          'WLC',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -52,25 +53,23 @@ class WSCScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  metadata['Title'],
-                  style: const TextStyle(
-                    fontSize: 24,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
+                  'Year: ${metadata['Year'] ?? 'Unknown Year'}',
+                  style: const TextStyle(fontSize: 16, color: Colors.white70),
                 ),
                 const SizedBox(height: 8.0),
                 Text(
-                  'Year: ${metadata['Year']}',
+                  'Location: ${metadata['Location'] ?? 'Unknown Location'}',
                   style: const TextStyle(fontSize: 16, color: Colors.white70),
                 ),
+                const SizedBox(height: 8.0),
                 Text(
-                  'Authors: ${metadata['Authors'].join(', ')}',
+                  'Authors: ${metadata['Authors']?.join(', ') ?? 'Unknown Authors'}',
                   style: const TextStyle(fontSize: 16, color: Colors.white70),
                 ),
               ],
             ),
           ),
+          const Divider(),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Text(
@@ -100,11 +99,10 @@ class WSCScreen extends StatelessWidget {
               ),
             ),
           ),
-          ...questions.map((item) {
-            final question = 'Q${item['Number']}. ${item['Question']}';
-            final answer = item['Answer'];
-            const references =
-                ''; // Placeholder since references aren't in the JSON
+          ...data.map((item) {
+            final question = 'Q${item['Number']}: ${item['Question']}';
+            final answer = item['Answer'] ?? 'No Answer Available';
+            const references = ''; // Placeholder for references
 
             return QuestionCard(
               question: question,
