@@ -8,9 +8,8 @@ class DrawerPage extends StatelessWidget {
     return Drawer(
       backgroundColor: const Color(0xFF0A0A0A),
       child: Container(
-        padding: const EdgeInsets.only(top: 70.0), // Optional padding
+        padding: const EdgeInsets.only(top: 70.0),
         child: Column(
-          // Use Column to place the text and ListView
           children: [
             Padding(
               padding: const EdgeInsets.only(
