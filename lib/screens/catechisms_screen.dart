@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../widgets/catechism_card.dart';
 import 'wsc_screen.dart';
+import 'wlc_screen.dart';
 
 class CatechismsScreen extends StatelessWidget {
   const CatechismsScreen({super.key});
@@ -21,7 +22,7 @@ class CatechismsScreen extends StatelessWidget {
         ),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back_ios),
           onPressed: () {
             Navigator.pop(context);
           },
@@ -43,7 +44,12 @@ class CatechismsScreen extends StatelessWidget {
           CatechismCard(
             title: 'Westminster Larger Catechism',
             progress: 0.50,
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const WLCScreen()),
+              );
+            },
           ),
           CatechismCard(
             title: 'Heidelberg Catechism',
