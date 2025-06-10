@@ -21,8 +21,8 @@ class CategoryCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(0), // Rounded corners
         side: BorderSide(
-          color: Colors.white, // Border color
-          width: 0.1, // Border width
+          color: Color(0xFF303030), // Border color
+          width: 1.5, // Border width
         ),
       ),
       child: InkWell(
@@ -30,18 +30,16 @@ class CategoryCard extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(
-                  left: 8,
-                  top: 8,
-                ), // Adjust the padding value as needed
-                child: Image.asset(
-                  imagePath,
-                  width: 157,
-                  height: 70,
-                  fit: BoxFit.cover,
-                ),
+            Container(
+              padding: const EdgeInsets.only(
+                left: 8,
+                top: 8,
+              ), // Adjust the padding value as needed
+              child: Image.asset(
+                imagePath,
+                width: 157,
+                height: 157,
+                fit: BoxFit.cover,
               ),
             ),
 
@@ -78,8 +76,8 @@ class CategoryCard extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.centerRight,
-              child: Padding(
-                padding: const EdgeInsets.only(right: 10.0, bottom: 10),
+              child: Container(
+                padding: EdgeInsets.only(right: 10.0, bottom: 10),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Color(0xFFD9D9D9), // Circular background color
