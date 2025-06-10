@@ -17,6 +17,7 @@ class MyApp extends StatelessWidget {
         systemNavigationBarColor: Color(0xFF0A0A0A),
       ),
     );
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 
     return MaterialApp(
       title: 'Reformed App',

@@ -80,7 +80,7 @@ class CategoriesScreen extends StatelessWidget {
             ),
             GridView.count(
               crossAxisCount: 2,
-              padding: const EdgeInsets.all(10.0),
+              padding: const EdgeInsets.fromLTRB(10.0, 10, 10, 25),
               mainAxisSpacing: 16.0,
               crossAxisSpacing: 1.0,
               childAspectRatio: 0.65,
@@ -94,8 +94,10 @@ class CategoriesScreen extends StatelessWidget {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                        builder: (context) => const CatechismsScreen(),
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) {
+                          return const CatechismsScreen();
+                        },
                       ),
                     );
                   },
@@ -114,6 +116,13 @@ class CategoriesScreen extends StatelessWidget {
                 ),
                 CategoryCard(
                   title: 'Doctrines of Grace',
+                  progress: 0.0,
+                  imagePath:
+                      'assets/images/Lithograph-Martin-Luther-church.jpg',
+                  onTap: () {},
+                ),
+                CategoryCard(
+                  title: '5 Solas',
                   progress: 0.0,
                   imagePath:
                       'assets/images/Lithograph-Martin-Luther-church.jpg',

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../widgets/catechism_card.dart';
 import 'wsc_screen.dart';
 import 'wlc_screen.dart';
+import 'heidelberg_screen.dart';
+import 'cyc_screen.dart';
 
 class CatechismsScreen extends StatelessWidget {
   const CatechismsScreen({super.key});
@@ -37,7 +39,11 @@ class CatechismsScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const WSCScreen()),
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) {
+                    return const WSCScreen();
+                  },
+                ),
               );
             },
           ),
@@ -47,29 +53,41 @@ class CatechismsScreen extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const WLCScreen()),
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) {
+                    return const WLCScreen();
+                  },
+                ),
               );
             },
           ),
           CatechismCard(
             title: 'Heidelberg Catechism',
             progress: 0.0,
-            onTap: () {},
-          ),
-          CatechismCard(
-            title: "Keach's Catechism",
-            progress: 0.0,
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) {
+                    return const HeidelbergScreen();
+                  },
+                ),
+              );
+            },
           ),
           CatechismCard(
             title: 'Catechism for Young Children',
             progress: 0.0,
-            onTap: () {},
-          ),
-          CatechismCard(
-            title: 'An Orthodox Catechism',
-            progress: 0.0,
-            onTap: () {},
+            onTap: () {
+              Navigator.push(
+                context,
+                PageRouteBuilder(
+                  pageBuilder: (context, animation, secondaryAnimation) {
+                    return const CycScreen();
+                  },
+                ),
+              );
+            },
           ),
         ],
       ),
