@@ -51,9 +51,15 @@ class CatechismCard extends StatelessWidget {
           ],
         ),
         trailing: IconButton(
-          icon: const Icon(Icons.arrow_forward_ios, color: Colors.white),
+          icon: const Icon(
+            Icons.arrow_forward_ios,
+            color: Color.fromARGB(255, 175, 175, 175),
+          ),
           onPressed: onTap,
+          padding: EdgeInsets.only(left: 20),
+          iconSize: 15.0, // Set the size here
         ),
+
         onTap: onTap,
       ),
     );

@@ -56,7 +56,7 @@ class CategoryCard extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10),
+              padding: const EdgeInsets.only(left: 13, top: 20),
               child: Text(
                 '${(progress * 100).toInt()} %',
                 style: const TextStyle(
@@ -67,38 +67,38 @@ class CategoryCard extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(left: 10.0, right: 55),
+              padding: const EdgeInsets.only(left: 12.0, right: 10, top: 5),
               child: LinearProgressIndicator(
                 value: progress,
                 color: Colors.red,
                 backgroundColor: Color(0x10D9D9D9),
               ),
             ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Container(
-                padding: EdgeInsets.only(right: 10.0, bottom: 10),
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Color(0xFFD9D9D9), // Circular background color
-                    shape: BoxShape.circle, // Makes the background circular
-                  ),
-                  width: 30.0, // Set the width of the circular container
-                  height: 30.0, // Set the height of the circular container
-                  child: IconButton(
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black, // Arrow color
-                      size: 10, // Smaller icon size
-                    ),
-                    padding:
-                        EdgeInsets
-                            .zero, // Remove any extra padding inside the button
-                    onPressed: onTap,
-                  ),
-                ),
-              ),
-            ),
+            // Align(
+            //   alignment: Alignment.centerRight,
+            //   child: Container(
+            //     padding: EdgeInsets.only(right: 10.0, bottom: 10),
+            //     child: Container(
+            //       decoration: BoxDecoration(
+            //         color: Color(0xFFD9D9D9), // Circular background color
+            //         shape: BoxShape.circle, // Makes the background circular
+            //       ),
+            //       width: 30.0, // Set the width of the circular container
+            //       height: 30.0, // Set the height of the circular container
+            //       child: IconButton(
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black, // Arrow color
+            //           size: 10, // Smaller icon size
+            //         ),
+            //         padding:
+            //             EdgeInsets
+            //                 .zero, // Remove any extra padding inside the button
+            //         onPressed: onTap,
+            //       ),
+            //     ),
+            //   ),
+            // ),
           ],
         ),
       ),
