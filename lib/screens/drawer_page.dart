@@ -20,9 +20,9 @@ class DrawerPage extends StatelessWidget {
                 child: const Text(
                   'X',
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Color.fromARGB(255, 175, 175, 175),
                     fontSize: 25,
-                    fontWeight: FontWeight.w300,
+                    fontWeight: FontWeight.w400,
                   ),
                 ),
               ),
@@ -48,18 +48,18 @@ class DrawerPage extends StatelessWidget {
                       Navigator.pop(context);
                     },
                   ),
-                  ListTile(
-                    leading: const Icon(Icons.history),
-                    title: const Text(
-                      'RECENT',
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    textColor: Colors.white,
-                    iconColor: Colors.white,
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
+                  // ListTile(
+                  //   leading: const Icon(Icons.history),
+                  //   title: const Text(
+                  //     'RECENT',
+                  //     style: TextStyle(fontWeight: FontWeight.bold),
+                  //   ),
+                  //   textColor: Colors.white,
+                  //   iconColor: Colors.white,
+                  //   onTap: () {
+                  //     Navigator.pop(context);
+                  //   },
+                  // ),
                   ListTile(
                     leading: const Icon(Icons.more_horiz),
                     title: const Text(

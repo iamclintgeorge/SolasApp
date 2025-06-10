@@ -30,10 +30,10 @@ class WSCScreen extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        actions: [
-          IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
-        ],
+        // actions: [
+        //   IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
+        //   IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
+        // ],
       ),
       body: ListView(
         children: [
