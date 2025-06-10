@@ -28,21 +28,21 @@ class CategoriesScreen extends StatelessWidget {
                     },
                   ),
             ),
-            actions: [
-              IconButton(icon: const Icon(Icons.search), onPressed: () {}),
-              PopupMenuButton<String>(
-                icon: const Icon(Icons.language),
-                onSelected: (String value) {},
-                itemBuilder: (BuildContext context) {
-                  return {'EN'}.map((String choice) {
-                    return PopupMenuItem<String>(
-                      value: choice,
-                      child: Text(choice),
-                    );
-                  }).toList();
-                },
-              ),
-            ],
+            // actions: [
+            // IconButton(icon: const Icon(Icons.search), onPressed: () {}),
+            //   PopupMenuButton<String>(
+            //     icon: const Icon(Icons.language),
+            //     onSelected: (String value) {},
+            //     itemBuilder: (BuildContext context) {
+            //       return {'EN'}.map((String choice) {
+            //         return PopupMenuItem<String>(
+            //           value: choice,
+            //           child: Text(choice),
+            //         );
+            //       }).toList();
+            //     },
+            //   ),
+            // ],
           ),
         ),
       ),

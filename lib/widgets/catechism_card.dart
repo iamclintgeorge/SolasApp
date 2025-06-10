@@ -25,7 +25,7 @@ class CatechismCard extends StatelessWidget {
       ),
       child: ListTile(
         title: Padding(
-          padding: EdgeInsets.only(bottom: 20),
+          padding: EdgeInsets.only(bottom: 20, top: 18),
           child: Text(
             title,
             style: const TextStyle(
@@ -36,20 +36,20 @@ class CatechismCard extends StatelessWidget {
             ),
           ),
         ),
-        subtitle: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              '${(progress * 100).toInt()}%',
-              style: const TextStyle(fontSize: 12, color: Colors.white),
-            ),
-            LinearProgressIndicator(
-              value: progress,
-              color: Colors.red,
-              backgroundColor: Colors.grey[700],
-            ),
-          ],
-        ),
+        // subtitle: Column(
+        //   crossAxisAlignment: CrossAxisAlignment.start,
+        //   children: [
+        //     Text(
+        //       '${(progress * 100).toInt()}%',
+        //       style: const TextStyle(fontSize: 12, color: Colors.white),
+        //     ),
+        //     LinearProgressIndicator(
+        //       value: progress,
+        //       color: Colors.red,
+        //       backgroundColor: Colors.grey[700],
+        //     ),
+        //   ],
+        // ),
         trailing: IconButton(
           icon: const Icon(
             Icons.arrow_forward_ios,
