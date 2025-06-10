@@ -1,4 +1,4 @@
-const Map<String, dynamic> heidelbergContent = {
+const Map<String, dynamic> belgicContent = {
   "Metadata": {
     "Title": "Belgic Confession",
     "AlternativeTitles": ["Belgic Confession of Faith"],

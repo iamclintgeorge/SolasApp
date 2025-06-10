@@ -5,31 +5,36 @@ import 'wlc_screen.dart';
 import 'heidelberg_screen.dart';
 import 'cyc_screen.dart';
 
-class CatechismsScreen extends StatelessWidget {
-  const CatechismsScreen({super.key});
+class SolasScreen extends StatelessWidget {
+  const SolasScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SectionScreen(
-      sectionTitle: 'Catechisms',
+      sectionTitle: '5 Solas',
       items: [
         SectionItem(
-          title: 'Westminster Shorter Catechism',
+          title: 'Sola Scriptura',
           progress: 0.70,
           destination: const WSCScreen(),
         ),
         SectionItem(
-          title: 'Westminster Larger Catechism',
+          title: 'Sola Fide',
           progress: 0.50,
           destination: const WLCScreen(),
         ),
         SectionItem(
-          title: 'Heidelberg Catechism',
+          title: 'Sola Gratia',
           progress: 0.0,
           destination: const HeidelbergScreen(),
         ),
         SectionItem(
-          title: 'Catechism for Young Children',
+          title: 'Solus Christus',
+          progress: 0.0,
+          destination: const CycScreen(),
+        ),
+        SectionItem(
+          title: 'Soli Deo Gloria',
           progress: 0.0,
           destination: const CycScreen(),
         ),
