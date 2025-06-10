@@ -20,7 +20,7 @@ class CatechismCard extends StatelessWidget {
         borderRadius: BorderRadius.zero,
         side: BorderSide(
           color: Color(0xFF303030), // Red border color
-          width: 0.5, // Border width
+          width: 1.17, // Border width
         ),
       ),
       child: ListTile(
