@@ -12,15 +12,18 @@ class DrawerPage extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(
-                left: 200.0,
-              ), // Add padding as needed
-              child: const Text(
-                'X',
-                style: TextStyle(
-                  color: Colors.white, // Text color
-                  fontSize: 20, // Font size
-                  fontWeight: FontWeight.w200, // Font weight
+              padding: const EdgeInsets.only(left: 200.0),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: const Text(
+                  'X',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 25,
+                    fontWeight: FontWeight.w300,
+                  ),
                 ),
               ),
             ),
@@ -60,7 +63,7 @@ class DrawerPage extends StatelessWidget {
                   ListTile(
                     leading: const Icon(Icons.more_horiz),
                     title: const Text(
-                      'MORE',
+                      'SETTINGS',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     textColor: Colors.white,
@@ -68,29 +71,6 @@ class DrawerPage extends StatelessWidget {
                     onTap: () {
                       Navigator.pop(context);
                     },
-                  ),
-                  const Padding(
-                    padding: EdgeInsets.only(left: 50, top: 300.0),
-                    child: Text(
-                      'FOLLOW US',
-                      style: TextStyle(
-                        fontSize: 11,
-                        fontWeight: FontWeight.bold,
-                        color: Color(0xFF929292),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 30, top: 20),
-                    child: Row(
-                      children: const [
-                        Icon(Icons.camera_alt, color: Color(0xFFD8D8D8)),
-                        SizedBox(width: 16.0),
-                        Icon(Icons.facebook, color: Color(0xFFD8D8D8)),
-                        SizedBox(width: 16.0),
-                        Icon(Icons.flutter_dash, color: Color(0xFFD8D8D8)),
-                      ],
-                    ),
                   ),
                 ],
               ),
