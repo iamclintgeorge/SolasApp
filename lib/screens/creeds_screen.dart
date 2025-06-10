@@ -5,31 +5,31 @@ import 'wlc_screen.dart';
 import 'heidelberg_screen.dart';
 import 'cyc_screen.dart';
 
-class CatechismsScreen extends StatelessWidget {
-  const CatechismsScreen({super.key});
+class CreedsScreen extends StatelessWidget {
+  const CreedsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SectionScreen(
-      sectionTitle: 'Catechisms',
+      sectionTitle: 'Creeds',
       items: [
         SectionItem(
-          title: 'Westminster Shorter Catechism',
+          title: 'Apostles Creed',
           progress: 0.70,
           destination: const WSCScreen(),
         ),
         SectionItem(
-          title: 'Westminster Larger Catechism',
+          title: 'Nicene Creed',
           progress: 0.50,
           destination: const WLCScreen(),
         ),
         SectionItem(
-          title: 'Heidelberg Catechism',
+          title: 'Athanasian Creed',
           progress: 0.0,
           destination: const HeidelbergScreen(),
         ),
         SectionItem(
-          title: 'Catechism for Young Children',
+          title: 'Chalcedonian Creed',
           progress: 0.0,
           destination: const CycScreen(),
         ),

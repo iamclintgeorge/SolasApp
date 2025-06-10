@@ -31,10 +31,10 @@ class WLCScreen extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        actions: [
-          IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
-        ],
+        // actions: [
+        //   IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
+        //   IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
+        // ],
         backgroundColor: const Color(0xFF0A0A0A),
       ),
       body: ListView(

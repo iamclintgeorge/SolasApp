@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import '../widgets/question_card.dart';
 import 'question_answer_screen.dart';
-import '../content/catechism/wsc_content.dart';
+import '../content/catechism/cyc_content.dart';
 
 class CycScreen extends StatelessWidget {
   const CycScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final metadata = wscContent['Metadata'];
-    final List<dynamic> questions = wscContent['Data'];
+    final metadata = cycContent['Metadata'];
+    final List<dynamic> questions = cycContent['Data'];
 
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'WSC',
+          'Catechism For Young Children',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -30,10 +30,10 @@ class CycScreen extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        actions: [
-          IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
-        ],
+        // actions: [
+        //   IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
+        //   IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
+        // ],
       ),
       body: ListView(
         children: [

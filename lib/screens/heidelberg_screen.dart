@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import '../widgets/question_card.dart';
 import 'question_answer_screen.dart';
-import '../content/catechism/wsc_content.dart';
+import '../content/catechism/heidelberg_content.dart';
 
 class HeidelbergScreen extends StatelessWidget {
   const HeidelbergScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final metadata = wscContent['Metadata'];
-    final List<dynamic> questions = wscContent['Data'];
+    final metadata = heidelbergContent['Metadata'];
+    final List<dynamic> questions = heidelbergContent['Data'];
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
       appBar: AppBar(
         title: const Text(
-          'WSC',
+          'Heidelberg Catechism',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
@@ -31,10 +31,10 @@ class HeidelbergScreen extends StatelessWidget {
             Navigator.pop(context);
           },
         ),
-        actions: [
-          IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
-          IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
-        ],
+        // actions: [
+        //   IconButton(icon: const Icon(Icons.favorite_border), onPressed: () {}),
+        //   IconButton(icon: const Icon(Icons.info_outline), onPressed: () {}),
+        // ],
       ),
       body: ListView(
         children: [

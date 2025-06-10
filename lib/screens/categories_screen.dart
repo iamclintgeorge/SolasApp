@@ -1,3 +1,7 @@
+import 'package:RefApp/screens/confessions_screen.dart';
+import 'package:RefApp/screens/creeds_screen.dart';
+import 'package:RefApp/screens/dg_screen.dart';
+import 'package:RefApp/screens/solas_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/category_card.dart';
 import 'catechisms_screen.dart';
@@ -106,27 +110,63 @@ class CategoriesScreen extends StatelessWidget {
                   title: 'Confessions',
                   progress: 0.0,
                   imagePath: 'assets/images/520px-Synode_van_Dordrecht.jpg',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) {
+                          return const ConfessionsScreen();
+                        },
+                      ),
+                    );
+                  },
                 ),
                 CategoryCard(
                   title: 'Creeds',
                   progress: 0.0,
                   imagePath: 'assets/images/422px-Athanasius_I.jpg',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) {
+                          return const CreedsScreen();
+                        },
+                      ),
+                    );
+                  },
                 ),
                 CategoryCard(
                   title: 'Doctrines of Grace',
                   progress: 0.0,
                   imagePath:
                       'assets/images/Lithograph-Martin-Luther-church.jpg',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) {
+                          return const DgScreen();
+                        },
+                      ),
+                    );
+                  },
                 ),
                 CategoryCard(
                   title: '5 Solas',
                   progress: 0.0,
                   imagePath:
                       'assets/images/Lithograph-Martin-Luther-church.jpg',
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      PageRouteBuilder(
+                        pageBuilder: (context, animation, secondaryAnimation) {
+                          return const SolasScreen();
+                        },
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
