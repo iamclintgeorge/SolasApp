@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import '../content/creeds/apostles_content.dart'; // Update with your actual file path
+import '../content/creeds/chalcedonian_content.dart'; // Update with your actual file path
 
-class ApostlesScreen extends StatelessWidget {
-  const ApostlesScreen({super.key});
+class ChalcedonianScreen extends StatelessWidget {
+  const ChalcedonianScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     // final metadata = apostlesContent['Metadata'] as Map<String, dynamic>;
     final content =
-        (apostlesContent['Data'] as Map<String, dynamic>)['Content'] as String;
+        (chalcedonianContent['Data'] as Map<String, dynamic>)['Content']
+            as String;
 
     return Scaffold(
       backgroundColor: const Color(0xFF0A0A0A),
       appBar: AppBar(
         title: const Text(
-          'Apostles Creed',
+          'Chalcedonian Definition',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
