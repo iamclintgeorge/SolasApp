@@ -94,7 +94,8 @@ class CategoriesScreen extends StatelessWidget {
                 CategoryCard(
                   title: 'Catechisms',
                   progress: 0.70,
-                  imagePath: 'assets/images/Luther_at_the_Diet_of_Worms.jpg',
+                  imagePath:
+                      'assets/images/Assertion_of_Liberty_of_Conscience_by_the_Independents_of_the_Westminster_Assembly_of_Divines,_1644.jpg',
                   onTap: () {
                     Navigator.push(
                       context,
@@ -155,8 +156,7 @@ class CategoriesScreen extends StatelessWidget {
                 CategoryCard(
                   title: '5 Solas',
                   progress: 0.0,
-                  imagePath:
-                      'assets/images/Lithograph-Martin-Luther-church.jpg',
+                  imagePath: 'assets/images/Luther_at_the_Diet_of_Worms.jpg',
                   onTap: () {
                     Navigator.push(
                       context,

@@ -38,15 +38,15 @@ class HeidelbergScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Image.asset(
-            'assets/images/Assertion_of_Liberty_of_Conscience_by_the_Independents_of_the_Westminster_Assembly_of_Divines,_1644.jpg',
-            height: 500,
-            width: double.infinity,
-            fit: BoxFit.cover,
-            errorBuilder:
-                (context, error, stackTrace) =>
-                    const Icon(Icons.error, color: Colors.white),
-          ),
+          // Image.asset(
+          //   'assets/images/Assertion_of_Liberty_of_Conscience_by_the_Independents_of_the_Westminster_Assembly_of_Divines,_1644.jpg',
+          //   height: 500,
+          //   width: double.infinity,
+          //   fit: BoxFit.cover,
+          //   errorBuilder:
+          //       (context, error, stackTrace) =>
+          //           const Icon(Icons.error, color: Colors.white),
+          // ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(

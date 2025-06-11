@@ -39,20 +39,31 @@ class WLCScreen extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Image.asset(
-            'assets/images/Assertion_of_Liberty_of_Conscience_by_the_Independents_of_the_Westminster_Assembly_of_Divines,_1644.jpg',
-            height: 500,
-            width: double.infinity,
-            fit: BoxFit.cover,
-            errorBuilder:
-                (context, error, stackTrace) =>
-                    const Icon(Icons.error, color: Colors.white),
-          ),
+          // Image.asset(
+          //   'assets/images/Assertion_of_Liberty_of_Conscience_by_the_Independents_of_the_Westminster_Assembly_of_Divines,_1644.jpg',
+          //   height: 500,
+          //   width: double.infinity,
+          //   fit: BoxFit.cover,
+          //   errorBuilder:
+          //       (context, error, stackTrace) =>
+          //           const Icon(Icons.error, color: Colors.white),
+          // ),
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                Padding(
+                  padding: EdgeInsets.only(right: 20),
+                  child: Text(
+                    metadata['Title'],
+                    style: const TextStyle(
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
                 Text(
                   'Year: ${metadata['Year'] ?? 'Unknown Year'}',
                   style: const TextStyle(fontSize: 16, color: Colors.white70),
@@ -70,7 +81,6 @@ class WLCScreen extends StatelessWidget {
               ],
             ),
           ),
-          const Divider(),
           const Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.0),
             child: Text(

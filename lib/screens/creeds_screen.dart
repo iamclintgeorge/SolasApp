@@ -1,6 +1,6 @@
+import 'package:RefApp/screens/apostles_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/section_widget.dart';
-import 'wsc_screen.dart';
 import 'wlc_screen.dart';
 import 'heidelberg_screen.dart';
 import 'cyc_screen.dart';
@@ -16,7 +16,7 @@ class CreedsScreen extends StatelessWidget {
         SectionItem(
           title: 'Apostles Creed',
           progress: 0.70,
-          destination: const WSCScreen(),
+          destination: const ApostlesScreen(),
         ),
         SectionItem(
           title: 'Nicene Creed',
