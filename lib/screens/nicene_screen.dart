@@ -14,7 +14,7 @@ class NiceneScreen extends StatelessWidget {
       backgroundColor: const Color(0xFF0A0A0A),
       appBar: AppBar(
         title: const Text(
-          'Chalcedonian Definition',
+          'Nicene Creed',
           style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold,
