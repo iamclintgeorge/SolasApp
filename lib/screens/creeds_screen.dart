@@ -1,4 +1,7 @@
 import 'package:RefApp/screens/apostles_screen.dart';
+import 'package:RefApp/screens/athanasian_screen.dart';
+import 'package:RefApp/screens/chalcedonian_screen.dart';
+import 'package:RefApp/screens/nicene_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/section_widget.dart';
 import 'wlc_screen.dart';
@@ -21,17 +24,17 @@ class CreedsScreen extends StatelessWidget {
         SectionItem(
           title: 'Nicene Creed',
           progress: 0.50,
-          destination: const WLCScreen(),
+          destination: const NiceneScreen(),
         ),
         SectionItem(
           title: 'Athanasian Creed',
           progress: 0.0,
-          destination: const HeidelbergScreen(),
+          destination: const AthanasianScreen(),
         ),
         SectionItem(
           title: 'Chalcedonian Creed',
           progress: 0.0,
-          destination: const CycScreen(),
+          destination: const ChalcedonianScreen(),
         ),
       ],
     );
