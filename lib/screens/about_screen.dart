@@ -29,7 +29,7 @@ class AboutScreen extends StatelessWidget {
           destination: const AthanasianScreen(),
         ),
         SectionItem(
-          title: 'Version 1.0',
+          title: 'Version 1.0.0',
           progress: 0.0,
           destination: const AthanasianScreen(),
         ),
