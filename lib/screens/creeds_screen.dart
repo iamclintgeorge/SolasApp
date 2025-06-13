@@ -4,9 +4,6 @@ import 'package:RefApp/screens/chalcedonian_screen.dart';
 import 'package:RefApp/screens/nicene_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/section_widget.dart';
-import 'wlc_screen.dart';
-import 'heidelberg_screen.dart';
-import 'cyc_screen.dart';
 
 class CreedsScreen extends StatelessWidget {
   const CreedsScreen({super.key});
