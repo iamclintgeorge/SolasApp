@@ -97,7 +97,7 @@ flutter:
 
     - family: LibreFranklin
       fonts:
-        - asset: assets/fonts/LibreFranklin-VariableFont_wght.ttf
+        - asset: assets/fonts/LibreFranklin-Medium.ttf
         - asset: assets/fonts/LibreFranklin-Italic-VariableFont_wght.ttf
           style: italic
   #   - family: Trajan Pro
