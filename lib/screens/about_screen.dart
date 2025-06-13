@@ -29,9 +29,9 @@ class AboutScreen extends StatelessWidget {
           destination: const AthanasianScreen(),
         ),
         SectionItem(
-          title: 'Chalcedonian Creed',
+          title: 'Version 1.0',
           progress: 0.0,
-          destination: const ChalcedonianScreen(),
+          destination: const AthanasianScreen(),
         ),
       ],
     );
