@@ -1,6 +1,6 @@
 import 'package:SolasApp/screens/apostles_screen.dart';
 import 'package:SolasApp/screens/athanasian_screen.dart';
-import 'package:SolasApp/screens/chalcedonian_screen.dart';
+// import 'package:SolasApp/screens/chalcedonian_screen.dart';
 import 'package:SolasApp/screens/nicene_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/section_widget.dart';
