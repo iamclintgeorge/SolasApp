@@ -111,9 +111,13 @@ class WCFScreen extends StatelessWidget {
                       onTap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                            builder:
-                                (_) => QuestionAnswerScreen(
+                          PageRouteBuilder(
+                            pageBuilder:
+                                (
+                                  context,
+                                  animation,
+                                  secondaryAnimation,
+                                ) => QuestionAnswerScreen(
                                   question:
                                       'Chapter $chapterNum, Section $sectionNum',
                                   answer:

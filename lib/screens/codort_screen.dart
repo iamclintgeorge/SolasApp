@@ -104,13 +104,14 @@ class CanonsOfDortScreen extends StatelessWidget {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(
-                              builder:
-                                  (_) => QuestionAnswerScreen(
-                                    question: 'Section $sectionLabel',
-                                    answer: content,
-                                    references: '',
-                                  ),
+                            PageRouteBuilder(
+                              pageBuilder:
+                                  (context, animation, secondaryAnimation) =>
+                                      QuestionAnswerScreen(
+                                        question: 'Section $sectionLabel',
+                                        answer: content,
+                                        references: '',
+                                      ),
                             ),
                           );
                         },
