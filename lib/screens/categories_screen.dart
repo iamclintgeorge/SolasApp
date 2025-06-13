@@ -1,7 +1,7 @@
-import 'package:RefApp/screens/confessions_screen.dart';
-import 'package:RefApp/screens/creeds_screen.dart';
-// import 'package:RefApp/screens/dg_screen.dart';
-// import 'package:RefApp/screens/solas_screen.dart';
+import 'package:SolasApp/screens/confessions_screen.dart';
+import 'package:SolasApp/screens/creeds_screen.dart';
+// import 'package:SolasApp/screens/dg_screen.dart';
+// import 'package:SolasApp/screens/solas_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/category_card.dart';
 import 'catechisms_screen.dart';

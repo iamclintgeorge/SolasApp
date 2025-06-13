@@ -1,6 +1,6 @@
-import 'package:RefApp/screens/belgic_screen.dart';
-import 'package:RefApp/screens/codort_screen.dart';
-import 'package:RefApp/screens/wcf_screen.dart';
+import 'package:SolasApp/screens/belgic_screen.dart';
+import 'package:SolasApp/screens/codort_screen.dart';
+import 'package:SolasApp/screens/wcf_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/section_widget.dart';
 
