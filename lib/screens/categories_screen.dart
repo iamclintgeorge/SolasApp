@@ -1,11 +1,11 @@
 import 'package:RefApp/screens/confessions_screen.dart';
 import 'package:RefApp/screens/creeds_screen.dart';
-import 'package:RefApp/screens/dg_screen.dart';
-import 'package:RefApp/screens/solas_screen.dart';
+// import 'package:RefApp/screens/dg_screen.dart';
+// import 'package:RefApp/screens/solas_screen.dart';
 import 'package:flutter/material.dart';
 import '../widgets/category_card.dart';
 import 'catechisms_screen.dart';
-import 'drawer_page.dart';
+// import 'drawer_page.dart';
 
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({super.key});
@@ -17,40 +17,43 @@ class CategoriesScreen extends StatelessWidget {
         preferredSize: Size.fromHeight(
           kToolbarHeight,
         ), // Default height of AppBar
-        child: Padding(
-          padding: const EdgeInsets.only(top: 20.0), // Padding above the AppBar
+        child: Container(
+          // padding: const EdgeInsets.only(top: 20.0),
           child: AppBar(
-            leading: Builder(
-              builder:
-                  (context) => IconButton(
-                    icon: const Icon(
-                      Icons.menu,
-                      size: 30.0, // Increase size if needed
-                    ),
-                    onPressed: () {
-                      Scaffold.of(context).openDrawer();
-                    },
-                  ),
-            ),
-            // actions: [
-            // IconButton(icon: const Icon(Icons.search), onPressed: () {}),
-            //   PopupMenuButton<String>(
-            //     icon: const Icon(Icons.language),
-            //     onSelected: (String value) {},
-            //     itemBuilder: (BuildContext context) {
-            //       return {'EN'}.map((String choice) {
-            //         return PopupMenuItem<String>(
-            //           value: choice,
-            //           child: Text(choice),
-            //         );
-            //       }).toList();
-            //     },
-            //   ),
-            // ],
+            // leading: Builder(
+            //   builder:
+            //       (context) => IconButton(
+            //         icon: const Icon(
+            //           Icons.menu,
+            //           size: 30.0, // Increase size if needed
+            //         ),
+            //         onPressed: () {
+            //           Scaffold.of(context).openDrawer();
+            //         },
+            //       ),
+            // ),
+            actions: [
+              // IconButton(icon: const Icon(Icons.search), onPressed: () {}),
+              // Container(
+              //   padding: EdgeInsets.fromLTRB(0, 5, 15, 0),
+              //   child: PopupMenuButton<String>(
+              //     icon: const Icon(Icons.language),
+              //     onSelected: (String value) {},
+              //     itemBuilder: (BuildContext context) {
+              //       return {'English', "Hindi"}.map((String choice) {
+              //         return PopupMenuItem<String>(
+              //           value: choice,
+              //           child: Text(choice),
+              //         );
+              //       }).toList();
+              //     },
+              //   ),
+              // ),
+            ],
           ),
         ),
       ),
-      drawer: const DrawerPage(),
+      // drawer: const DrawerPage(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -61,7 +64,7 @@ class CategoriesScreen extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(left: 20.0, top: 30.0),
+                    padding: EdgeInsets.only(left: 20.0),
                     child: Text(
                       'Categories',
                       style: TextStyle(
@@ -137,37 +140,52 @@ class CategoriesScreen extends StatelessWidget {
                     );
                   },
                 ),
-                CategoryCard(
-                  title: 'Doctrines of Grace',
-                  progress: 0.0,
-                  imagePath:
-                      'assets/images/Lithograph-Martin-Luther-church.jpg',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (context, animation, secondaryAnimation) {
-                          return const DgScreen();
-                        },
-                      ),
-                    );
-                  },
-                ),
-                CategoryCard(
-                  title: '5 Solas',
-                  progress: 0.0,
-                  imagePath: 'assets/images/Luther_at_the_Diet_of_Worms.jpg',
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      PageRouteBuilder(
-                        pageBuilder: (context, animation, secondaryAnimation) {
-                          return const SolasScreen();
-                        },
-                      ),
-                    );
-                  },
-                ),
+                // CategoryCard(
+                //   title: 'Doctrines of Grace',
+                //   progress: 0.0,
+                //   imagePath:
+                //       'assets/images/Lithograph-Martin-Luther-church.jpg',
+                //   onTap: () {
+                //     Navigator.push(
+                //       context,
+                //       PageRouteBuilder(
+                //         pageBuilder: (context, animation, secondaryAnimation) {
+                //           return const DgScreen();
+                //         },
+                //       ),
+                //     );
+                //   },
+                // ),
+                // CategoryCard(
+                //   title: '5 Solas',
+                //   progress: 0.0,
+                //   imagePath: 'assets/images/Luther_at_the_Diet_of_Worms.jpg',
+                //   onTap: () {
+                //     Navigator.push(
+                //       context,
+                //       PageRouteBuilder(
+                //         pageBuilder: (context, animation, secondaryAnimation) {
+                //           return const SolasScreen();
+                //         },
+                //       ),
+                //     );
+                //   },
+                // ),
+                // CategoryCard(
+                //   title: 'Covenant Theology',
+                //   progress: 0.0,
+                //   imagePath: 'assets/images/Luther_at_the_Diet_of_Worms.jpg',
+                //   onTap: () {
+                //     Navigator.push(
+                //       context,
+                //       PageRouteBuilder(
+                //         pageBuilder: (context, animation, secondaryAnimation) {
+                //           return const SolasScreen();
+                //         },
+                //       ),
+                //     );
+                //   },
+                // ),
               ],
             ),
           ],

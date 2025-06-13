@@ -87,8 +87,8 @@ class CanonsOfDortScreen extends StatelessWidget {
                 title: Text(
                   'Chapter $chapterNum: $title',
                   style: const TextStyle(
-                    color: Colors.amber,
-                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
                     fontSize: 16,
                   ),
                 ),
