@@ -4,8 +4,8 @@
 
 This Privacy Notice for DeoGratias Media ('we', 'us', or 'our'), describes how and why we might access, collect, store, use, and/or share ('process') your personal information when you use our services ('Services'), including when you:
 
-- Download and use our mobile application (RefApp), or any other application of ours that links to this Privacy Notice
-- Use RefApp. A Mobile Application for studying Reformed Standards and Historical Creeds.
+- Download and use our mobile application (SolasApp), or any other application of ours that links to this Privacy Notice
+- Use SolasApp. A Mobile Application for studying Reformed Standards and Historical Creeds.
 - Engage with us in other related ways, including any sales, marketing, or events
 
 **Questions or concerns?** Reading this Privacy Notice will help you understand your privacy rights and choices. We are responsible for making decisions about how your personal information is processed. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at example@gmail.com.

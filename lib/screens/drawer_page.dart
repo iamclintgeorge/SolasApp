@@ -1,4 +1,4 @@
-import 'package:RefApp/screens/about_screen.dart';
+import 'package:SolasApp/screens/about_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerPage extends StatelessWidget {
