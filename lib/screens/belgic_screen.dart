@@ -87,13 +87,14 @@ class BelgicConfessionScreen extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder:
-                        (_) => QuestionAnswerScreen(
-                          question: 'Article $articleNum: $title',
-                          answer: content,
-                          references: '',
-                        ),
+                  PageRouteBuilder(
+                    pageBuilder:
+                        (context, animation, secondaryAnimation) =>
+                            QuestionAnswerScreen(
+                              question: 'Article $articleNum: $title',
+                              answer: content,
+                              references: '',
+                            ),
                   ),
                 );
               },

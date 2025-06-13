@@ -1,3 +1,4 @@
+import 'package:RefApp/screens/about_screen.dart';
 import 'package:flutter/material.dart';
 
 class DrawerPage extends StatelessWidget {
@@ -48,28 +49,39 @@ class DrawerPage extends StatelessWidget {
                       Navigator.pop(context);
                     },
                   ),
-                  ListTile(
-                    leading: const Icon(Icons.history),
-                    title: const Text(
-                      'PRIVACY POLICY',
-                      style: TextStyle(fontWeight: FontWeight.bold),
-                    ),
-                    textColor: Colors.white,
-                    iconColor: Colors.white,
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                  ),
+                  // ListTile(
+                  //   leading: const Icon(Icons.history),
+                  //   title: const Text(
+                  //     'PRIVACY POLICY',
+                  //     style: TextStyle(fontWeight: FontWeight.bold),
+                  //   ),
+                  //   textColor: Colors.white,
+                  //   iconColor: Colors.white,
+                  //   onTap: () {
+                  //     Navigator.pop(context);
+                  //   },
+                  // ),
                   ListTile(
                     leading: const Icon(Icons.more_horiz),
                     title: const Text(
-                      'LICENSES',
+                      'ABOUT',
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                     textColor: Colors.white,
                     iconColor: Colors.white,
                     onTap: () {
-                      Navigator.pop(context);
+                      Navigator.push(
+                        context,
+                        PageRouteBuilder(
+                          pageBuilder: (
+                            context,
+                            animation,
+                            secondaryAnimation,
+                          ) {
+                            return const AboutScreen();
+                          },
+                        ),
+                      );
                     },
                   ),
                 ],

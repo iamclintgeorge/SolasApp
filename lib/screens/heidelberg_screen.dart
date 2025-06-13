@@ -114,13 +114,14 @@ class HeidelbergScreen extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(
-                    builder:
-                        (context) => QuestionAnswerScreen(
-                          question: question,
-                          answer: answer,
-                          references: references,
-                        ),
+                  PageRouteBuilder(
+                    pageBuilder:
+                        (context, animation, secondaryAnimation) =>
+                            QuestionAnswerScreen(
+                              question: question,
+                              answer: answer,
+                              references: references,
+                            ),
                   ),
                 );
               },
