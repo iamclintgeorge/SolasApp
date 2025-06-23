@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screens/categories_screen.dart';
 import 'package:flutter/services.dart';
+import 'package:in_app_update/in_app_update.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,8 +10,18 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  void checkForUpdate() async {
+    InAppUpdate.checkForUpdate().then((info) {
+      if (info.updateAvailability == UpdateAvailability.updateAvailable) {
+        InAppUpdate.performImmediateUpdate();
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    checkForUpdate();
+
     SystemChrome.setSystemUIOverlayStyle(
       SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
